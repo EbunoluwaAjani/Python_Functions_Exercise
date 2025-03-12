@@ -1,4 +1,4 @@
-
+        #Task 1
 def get_first_name(first_name: str) -> str:
     '''
     Takes two items within a string
@@ -43,7 +43,7 @@ print(get_full_name(y))
 
 
 
-
+                #Task 2
 def adjust_pattern(lst :list) ->list:
     '''
     Replaces spaces with underscores in each string of a given list.
@@ -68,7 +68,7 @@ print(adjust_pattern(my_list))
 
 
 
-
+                    #Task 3
 def extract_patterns(lst):
     '''
     Extracts each string of a given list that starts with an uppercase and ends with 'a'.
@@ -90,7 +90,7 @@ dec = ['Mayowa', 'chizoba', 'Chigozie']
 print(extract_patterns(dec))
 
 
-
+                    #Task 4
 def valid_data(names):
     '''
     Checks each name in the list to ensure it contains only alphabetic characters
