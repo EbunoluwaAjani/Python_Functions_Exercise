@@ -69,7 +69,7 @@ print(adjust_pattern(my_list))
 
 
                     #Task 3
-def extract_patterns(lst):
+def extract_patterns(lst: list)-> list:
     '''
     Extracts each string of a given list that starts with an uppercase and ends with 'a', If a name begins with a capital letter but doesn't end with 'a',
     convert its last letter to 'a'
@@ -97,7 +97,7 @@ print(extract_patterns(dec))
 
 
                     #Task 4
-def valid_data(names):
+def valid_data(names list|str)-> list:
     '''
     Checks each name in the list to ensure it contains only alphabetic characters
 
