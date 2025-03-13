@@ -71,7 +71,8 @@ print(adjust_pattern(my_list))
                     #Task 3
 def extract_patterns(lst):
     '''
-    Extracts each string of a given list that starts with an uppercase and ends with 'a'.
+    Extracts each string of a given list that starts with an uppercase and ends with 'a', If a name begins with a capital letter but doesn't end with 'a',
+    convert its last letter to 'a'
 
     Args:
         lst (list of str): A list of strings containing names.
@@ -82,9 +83,14 @@ def extract_patterns(lst):
     '''
     new_list = []
     for item in lst:
-        for x in item:
-            if x[0].isupper() and item.endswith('a'):
-                new_list.append(item)
+        if item[0].isupper() and item.endswith('a'):
+            x =item
+            new_list.append(x)
+        elif item[-1] != 'a' :
+            y =item.replace(item[-1],'a')
+            new_list.append(y)
+                        
+       
     return new_list
 dec = ['Mayowa', 'chizoba', 'Chigozie']            
 print(extract_patterns(dec))
