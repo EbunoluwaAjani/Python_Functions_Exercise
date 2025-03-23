@@ -1,5 +1,5 @@
 import requests
-import json
+
 
 #Task1: Extract all senior roles and manager roles into a different list.
 response = requests.get("https://jobicy.com/api/v2/remote-jobs?count=20&geo=usa&industry=marketing&tag=seo ")
