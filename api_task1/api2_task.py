@@ -44,5 +44,3 @@ def extract(base_url):
     print(f'data successfully processed and downloaded to api_doc file')
     return df
    
-url = 'https://content.guardianapis.com/search?page=1&q="nigeria"&from-date=2025-01-01&api-key=c7520df4-fc09-4073-adec-201cd5fac577'
-print(extract(url))
